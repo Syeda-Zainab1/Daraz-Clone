@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* Universal font family application */
+  font-family: 'Public Sans', Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+.navbar{
+    position:relative ;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+.menu-btn , .close-btn{
+    height:70px;
+    width:70px;
+    border: none;
+    border-radius:50% ;
+    font-size: 1.8rem;
+    margin-right: 30px;
+    background-color:#ff4400;
+    color: #ffffff;
+}
+.close-btn{
+    font-size: 2.9rem;
+    padding-bottom: 15px;
+}
+/* 1. Hides the menu off-screen by default */
+.main-menue {
+  position: fixed;
+  top: -100%;
+  left: 0;             
+  width: 100%;
+  height: 100%;
+  background-color: #2e002a;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: top 0.4s ease; /* Makes it slide in smoothly */
+  z-index: 1000;
+}
+
+/* 2. Revealed when JS adds the 'active' class */
+.main-menue.active {
+  top: 0;                 /* Slides it back into view */
+}
+.navlist{
+    display: flex;
+    margin: 50px;
+    justify-content:space-between ;
+    align-items: start;
+}
+.navlist li{
+    list-style-type: none;
+}
+.navlist li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 59.5px;
+    font-weight: 700;
+    line-height: 5rem;
+}
+#marketing h3{
+    font-size: 16px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+#marketing a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.8rem;
+}
+#marketing{
+    display: flex;
+    margin-right: 70px;
+    margin-top: 20px;
+    align-items: cwnter;
+    justify-content: center;
+    flex-direction: column;
+}
+#hero{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+#hero h1{
+    font-size: 75px;
+    color: #c2fffa;
+    line-height: 95.45%;
+    font-weight: 700;
+    padding:50px 20px 20px 20px ;
+    margin-top: 130px;
+}
+#hero h3{
+    font-size: 30px;
+    color: #c2fffa;
+    line-height: 120%;
+    font-weight: 400;
+    padding-left:20px ;
+}
+.scrol p{
+    font-size: 26px;
+    color: #c2fffa;
+    line-height: 137%;
+    font-weight: 300;
+}
+.scrol{
+    height: 50px;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 20px 40px 10px;
+}
+.herobtn{
+    background-color: transparent;
+    color: #c2fffa;
+    border: none;
+    font-size: 28px;
+}
+/* Background image filling the entire section */
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center right;
+  z-index: 1;
+}
+
+/* Orange polygon shape cut using clip-path */
+.hero-orange-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff4700; /* Daraz signature orange */
+  z-index: 2;
+  
+  /* Creates the angled cut-out on the right side */
+  clip-path: polygon(0 0, 72% 0, 62% 100%, 0 100%);
+}
