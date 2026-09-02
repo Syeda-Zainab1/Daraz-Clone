@@ -5,24 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Daraz Group is South Asia’s leading eCommerce platform, providing access to 50 million products for 40 million monthly active users in Pakistan, Bangladesh, Sri Lanka, Nepal and Myanmar."/>
     <link rel="shortcut icon" href="fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700,900&display=swap" rel="stylesheet">
     <title>Home &#8212; Daraz</title>
 </head>
 <body>
-<div id="hero">
-    <header>
+<div id="hero" class="hero-section">
+    <header class="navbar">
         <img src="logo.png" alt="Daraz-logo">
+        <button class="menu-btn" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
         <nav id="menue" class="main-menue">
+            <button class="close-btn" id="menuClose">&times;</button>
+            <div class="navlist">
+            <div class="first">
             <ul>
                <li><a href="#">What we do</a></li> 
                <li><a href="#">Who we are</a></li>
                <li><a href="#">Our Impact</a></li>
                <li><a href="#">Our Team</a></li> 
             </ul>
+            </div>
+            <div  class="second">
             <ul>
                <li><a href="#">Newsroom</a></li> 
                <li><a href="#">Careers</a></li>
                <li><a href="#">Contact</a></li> 
             </ul>
+            </div>
             <div id="marketing">
                 <h3>Our Markets</h3>
                 <a href="#">Pakistan</a>
@@ -30,10 +43,20 @@
                 <a href="#">Sri Lanka</a>
                 <a href="#">Nepal</a>
             </div>
+            </div>
         </nav>
-    </header>
-    <h1>South Asia's e-commerce leader</h1>
+    <body>
+    <!-- Background Image Container -->
+    <div class="hero-bg"></div>
+    <!-- Angled Orange Overlay Container -->
+    <div class="hero-orange-overlay">
+    <h1>South Asia's <br>e-commerce leader</h1>
     <h3>Enabling a new shopping experience</h3>
+    <div class="scrol">
+        <button class="herobtn">&darr;</button>
+        <p>Scroll</p>
+    </div>
+    </div>
 </div>
 <div id="impact">
     <h4>Daraz at a glance</h4>
@@ -59,7 +82,7 @@
         </div>
         <div class="img-box3">
             <img src="product.png" alt="product">
-            <h2>35+ million</h2>
+            <h2>35+ million</h2>    
             <h4>Assortments of products</h4>
         </div>
     </div>
@@ -68,22 +91,22 @@
     <div class="globe">
         <img src="globe.png" alt="map">
     </div>
-    
     <div class="slides-wrapper">
         <h4>Our markets</h4>
         <h2>Four of the most exciting emerging economies in the world, and we are committed to unlocking their potential.</h2>
         <div id="slide1">
         <div class="img-box">
-            <img src="map.png" alt="product">
+            <img src="map.png" alt="map">
             <h2>450m</h2>
             <h4>Total population</h4>
         </div>
         <div class="img-box">
-            <img src="product.png" alt="product">
+            <img src="money.png" alt="money">
             <h2>$738 b</h2>
             <h4>Total GPA in 2021 (USD)</h4>
         </div>
         </div>
+    </div>
     <div class="gallery-controls">
     <a href="slide5.html"><button class="nav-btn prev-btn">&lt;</button></a>
     <div class="indicators">
@@ -96,7 +119,7 @@
     <a href="slide2.html"><button class="nav-btn next-btn">&gt;</button></a>
   </div>
 </div>
-<!--Day2-->
+<!--2nd Day-->
 <div id="about">
     <h4>Welcome to the Daraz unvierse</h4>
     <h1>A world with endless possibilities</h1>
@@ -123,10 +146,12 @@ Imagine a place that has everything you could possibly ever want or need. In sha
         <h2>11 Reasons to Shop on Daraz 11 11 -the Biggest One-Day Sale of the Year!</h2>
     </div></a>
 </div>
+</body>
+<!-- 3rd Day-->
 <footer>
 <div id="footer">
     <div id="logo">
-        <img src="logo.png" alt="Daraz-logo">
+        <img src="logo.png" alt="Daraz-logo"><br/>
         <button><h4>Go to top</h4></button>
     </div>
     <div id="navigation">
@@ -176,7 +201,6 @@ Imagine a place that has everything you could possibly ever want or need. In sha
     </div>
     </div>
 </div>
-</footer> 
 <div id="site-credits">
     <h3>Site Credits</h3>
 
@@ -186,5 +210,7 @@ Imagine a place that has everything you could possibly ever want or need. In sha
     <p>Brand</p>
     <a href="https://www.design.studio/" target="_blank">Design Studio</a>
 </div>
+</footer>
+<script src="script.js"></script> 
 </body>
 </html>
